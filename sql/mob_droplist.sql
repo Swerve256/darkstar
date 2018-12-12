@@ -2500,7 +2500,7 @@ INSERT INTO `mob_droplist` VALUES (417,0,0,1000,1624,30);
 INSERT INTO `mob_droplist` VALUES (417,0,0,1000,1650,50);
 INSERT INTO `mob_droplist` VALUES (417,0,0,1000,1781,170);
 INSERT INTO `mob_droplist` VALUES (417,0,0,1000,15349,420);
-INSERT INTO `mob_droplist` VALUES (418,0,0,1000,2827,160);
+INSERT INTO `mob_droplist` VALUES (418,0,0,1000,2827,146); -- (Bugbear Muscleman) Rugged Gold Thread
 INSERT INTO `mob_droplist` VALUES (419,0,0,1000,1624,110);
 INSERT INTO `mob_droplist` VALUES (419,0,0,1000,1650,330);
 INSERT INTO `mob_droplist` VALUES (419,2,0,1000,1654,0);
@@ -32345,7 +32345,7 @@ INSERT INTO `mob_droplist` VALUES (4422,0,0,1000,4878,20);
 INSERT INTO `mob_droplist` VALUES (4423,2,0,1000,880,0);
 INSERT INTO `mob_droplist` VALUES (4423,0,0,1000,880,280);
 INSERT INTO `mob_droplist` VALUES (4423,0,0,1000,16753,40);
-INSERT INTO `mob_droplist` VALUES (4424,0,0,1000,16303,60);
+INSERT INTO `mob_droplist` VALUES (4424,0,0,1000,16303,167); -- (Brazen Bones) Laran's Pendant
 INSERT INTO `mob_droplist` VALUES (4425,0,0,1000,880,1000);
 INSERT INTO `mob_droplist` VALUES (4425,0,0,1000,17072,140);
 INSERT INTO `mob_droplist` VALUES (4426,0,0,1000,784,1000);
@@ -32387,7 +32387,7 @@ INSERT INTO `mob_droplist` VALUES (4440,0,0,1000,1039,70);
 INSERT INTO `mob_droplist` VALUES (4441,0,0,1000,2159,420);
 INSERT INTO `mob_droplist` VALUES (4441,0,0,1000,2165,30);
 INSERT INTO `mob_droplist` VALUES (4441,0,0,1000,2220,220);
-INSERT INTO `mob_droplist` VALUES (4442,0,0,1000,17709,800);
+INSERT INTO `mob_droplist` VALUES (4442,0,0,1000,17709,583); -- (Cwn Cyrff) Swan Bilbo
 INSERT INTO `mob_droplist` VALUES (4443,0,0,1000,858,290);
 INSERT INTO `mob_droplist` VALUES (4443,0,0,1000,940,180);
 INSERT INTO `mob_droplist` VALUES (4443,0,0,1000,1039,80);
@@ -32953,6 +32953,29 @@ INSERT INTO `mob_droplist` VALUES (4601,0,0,1000,19277,133); -- 13.3% Tsugumi
 INSERT INTO `mob_droplist` VALUES (4602,0,0,1000,11529,108); -- 10.8% Frugal Cape
 INSERT INTO `mob_droplist` VALUES (4603,0,0,1000,2820,170); -- Aptant: Geoc off Drumskull Zogdregg
 INSERT INTO `mob_droplist` VALUES (4603,0,0,1000,2822,230); -- Aptant: Secan
+
+INSERT INTO `mob_droplist` VALUES (4604,0,0,1000,18947,164); -- (Ba'Tho Mercifulheart) Moliones's Sickle
+INSERT INTO `mob_droplist` VALUES (4604,0,0,1000,2504,222); -- (Ba'Tho Mercifulheart) Heavy Quadav Chestplate
+INSERT INTO `mob_droplist` VALUES (4605,0,0,1000,15014,400); -- (Da'Dha Hundredmask) Patrician's Cuffs
+INSERT INTO `mob_droplist` VALUES (4606,0,0,1000,15818,296); -- (Ea'Tho Cruelheart) Moliones's Ring
+INSERT INTO `mob_droplist` VALUES (4607,0,0,1000,16319,400); -- (Zhuu Buxu the Silent) Sangoma Lappa
+INSERT INTO `mob_droplist` VALUES (4607,0,0,1000,2520,400); -- (Zhuu Buxu the Silent) Yagudo Kote
+INSERT INTO `mob_droplist` VALUES (4608,0,0,1000,2837,200); -- (Ratatoskr) Ratatoskr Pelt
+INSERT INTO `mob_droplist` VALUES (4609,0,0,1000,15760,333); -- (Ashmaker Gotblut) Marabout Sandals
+INSERT INTO `mob_droplist` VALUES (4610,0,0,1000,19208,222); -- (Hawkeyed Dnatbat) Grand Crossbow
+INSERT INTO `mob_droplist` VALUES (4611,0,0,1000,16030,100); -- (Agar Agar) Soarer Earring
+INSERT INTO `mob_droplist` VALUES (4612,0,0,1000,19306,250); -- (Nommo) Lyft Lance
+INSERT INTO `mob_droplist` VALUES (4613,0,0,1000,11406,100); -- (Delicieuse Delphine) Stimulus Sabbots
+INSERT INTO `mob_droplist` VALUES (4614,0,0,1000,1263,1000); -- (Leshonki) Leshonki Bulb
+INSERT INTO `mob_droplist` VALUES (4614,0,0,1000,574,1000); -- (Leshonki) Fruit Seeds
+INSERT INTO `mob_droplist` VALUES (4614,0,0,1000,574,1000); -- (Leshonki) Fruit Seeds
+INSERT INTO `mob_droplist` VALUES (4614,0,0,1000,953,100); -- (Leshonki) Treant Bulb
+INSERT INTO `mob_droplist` VALUES (4614,0,0,1000,1236,400); -- (Leshonki) Cactus Stems
+INSERT INTO `mob_droplist` VALUES (4615,0,0,1000,2813,204); -- (Konjac) Aptant: Durus
+INSERT INTO `mob_droplist` VALUES (4615,0,0,1000,2813,204); -- (Konjac) Aptant: Durus
+INSERT INTO `mob_droplist` VALUES (4616,0,0,1000,2816,167); -- (Chelicerata) Aptant: Tachus
+INSERT INTO `mob_droplist` VALUES (4616,0,0,1000,2815,417); -- (Chelicerata) Aptant: Arkhe
+INSERT INTO `mob_droplist` VALUES (4617,0,0,1000,19306,100); -- (Tikbalang) Lyft Pole
 
 /*!40000 ALTER TABLE `mob_droplist` ENABLE KEYS */;
 UNLOCK TABLES;
