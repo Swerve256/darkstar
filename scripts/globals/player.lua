@@ -144,6 +144,7 @@ end
 -- called by core after a player logs into the server or zones
 function onGameIn(player, firstLogin, zoning)
     if not zoning then
+	player:PrintToServer(string.format("The character %s has logged in...", player:getName()), 0x1C);
         -- things checked ONLY during logon go here
         if firstLogin then
             CharCreate(player)

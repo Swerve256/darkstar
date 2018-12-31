@@ -1,4 +1,4 @@
-cd C:\Users\Shaun\Desktop\Server Test\darkstar\sql
+cd C:\Users\Shaun\Desktop\FFXI Server\darkstar\sql
 del auction_house.sql
 del chars.sql
 del accounts.sql

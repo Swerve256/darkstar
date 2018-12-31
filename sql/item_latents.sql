@@ -342,16 +342,6 @@ INSERT INTO `item_latents` VALUES(13287, 291, 2, 2, 75); -- Counter+2 while HP <
 INSERT INTO `item_latents` VALUES(13420, 291, 5, 2, 25); -- Counter+5 while HP <=25% and TP <=100%
 
 -- -------------------------------------------------------
--- Medicine Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13421, 160, -30, 2, 25); -- Damage Taken -30% while HP <=25% and TP <=100%
-
--- -------------------------------------------------------
--- Sorcerer's Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13422, 160, -30, 2, 25); -- Damage Taken -30% while HP <=25% and TP <=100%
-
--- -------------------------------------------------------
 -- Fencer's Earring
 -- -------------------------------------------------------
 INSERT INTO `item_latents` VALUES(13423, 163, -30, 2, 25); -- Magic Taken -30% while HP <=25% and TP <=100%
@@ -411,10 +401,6 @@ INSERT INTO `item_latents` VALUES(13430, 163, -20, 2, 25); -- Magic damage taken
 -- -------------------------------------------------------
 INSERT INTO `item_latents` VALUES(13298, 384, 40, 2, 75); -- Haste+4% while HP <=75% and TP <=100%
 
--- -------------------------------------------------------
--- Shinobi Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13431, 167, 20, 2, 25); -- Haste+20% while HP <=25% and TP <=100%
 
 -- -------------------------------------------------------
 -- Drake Earring

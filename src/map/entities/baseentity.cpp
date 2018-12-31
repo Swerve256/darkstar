@@ -28,6 +28,7 @@
 #include "../ai/ai_container.h"
 #include "../instance.h"
 
+
 CBaseEntity::CBaseEntity()
 {
     id = 0;
