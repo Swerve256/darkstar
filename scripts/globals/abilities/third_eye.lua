@@ -17,5 +17,5 @@ function onAbilityCheck(player,target,ability)
 end
 
 function onUseAbility(player,target,ability)
-    player:addStatusEffect(dsp.effect.THIRD_EYE,0,0,30) --power keeps track of procs
+    player:addStatusEffect(dsp.effect.THIRD_EYE,0,0,1800) --power keeps track of procs
 end

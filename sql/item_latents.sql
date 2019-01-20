@@ -326,10 +326,6 @@ INSERT INTO `item_latents` VALUES(18949, 302, 1, 0, 25); -- Tiple Attack 1% when
 -- -------------------------------------------------------
 INSERT INTO `item_latents` VALUES(13286, 288, 2, 2, 75); -- Double Attack+2% when HP <=75% and TP <=100%
 
--- -------------------------------------------------------
--- Soldier's Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13419, 63, 20, 2, 25); -- DEF:20% when HP <=25% and TP <=100%
 
 -- -------------------------------------------------------
 -- Kampfer Ring
@@ -356,15 +352,6 @@ INSERT INTO `item_latents` VALUES(13424, 68, 15, 2, 25); -- Evasion+15 while HP 
 -- -------------------------------------------------------
 INSERT INTO `item_latents` VALUES(13291, 298, 3, 2, 75); -- Steel+3 while HP <=75% and TP <=100%
 
--- -------------------------------------------------------
--- Guardian Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13425, 168, 30, 2, 25); -- Spell interruption rate down 30% while HP <=25% and TP <=100%
-
--- -------------------------------------------------------
--- Slayer's Earring
--- -------------------------------------------------------
-INSERT INTO `item_latents` VALUES(13426, 161, -20, 2, 25); -- Physical damage taken -20% while HP <=25% and TP <=100%
 
 -- -------------------------------------------------------
 -- Tamer's Earring

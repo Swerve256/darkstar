@@ -13,7 +13,7 @@
 
 cmdprops =
 {
-    permission = 4,
+    permission = 2,
     parameters = "ss"
 };
 

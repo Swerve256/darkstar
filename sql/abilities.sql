@@ -1,3 +1,4 @@
+SELECT * FROM ffxi.abilities;
 -- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
 --
 -- Host: localhost    Database: dspdb
@@ -30,7 +31,6 @@ CREATE TABLE `abilities` (
   `meritModID` smallint(4) NOT NULL DEFAULT '0',
   `addType` smallint(2) NOT NULL DEFAULT '0',
   `content_tag` varchar(7) DEFAULT NULL,
-  PRIMARY KEY (`abilityId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=56;
 
 --
@@ -517,6 +517,10 @@ INSERT INTO `abilities` VALUES (759,'pecking_flurry',9,25,257,255,102,0,0,0,2000
 INSERT INTO `abilities` VALUES (760,'sickle_slash',9,25,257,255,102,0,0,0,2000,0,6,18.0,1,1,60,0,0,NULL);
 INSERT INTO `abilities` VALUES (761,'acid_spray',9,25,257,255,102,0,0,0,2000,0,6,18.0,0,2,60,0,0,NULL);
 INSERT INTO `abilities` VALUES (762,'spider_web',9,25,257,255,102,0,0,0,2000,0,6,18.0,0,2,60,0,0,NULL);
+INSERT INTO `abilities` VALUES (19,'provoke',13,5,4,30,5,0,0,3,2000,0,6,18.0,0,1,1800,0,0,NULL);
+INSERT INTO `abilities` VALUES (46,'third_eye',1,15,1,60,133,0,0,24,2000,0,6,20.0,0,1,0,1088,0,NULL);
+INSERT INTO `abilities` VALUES (47,'meditate',1,30,1,180,134,0,0,25,2000,0,6,20.0,0,320,0,1094,0,NULL);
+
 -- INSERT INTO `abilities` VALUES (764,'infected_leech',9,25,257,rec,102,0,0,0,2000,0,6,18.0,1,1,60,0,0,NULL); -- ROTZ
 -- INSERT INTO `abilities` VALUES (765,'gloom_spray',9,25,257,rec,102,0,0,0,2000,0,6,18.0,0,2,60,0,0,NULL); -- ROTZ
 
