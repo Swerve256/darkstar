@@ -49437,21 +49437,23 @@ INSERT INTO `item_mods` VALUES (28671,10,7);      -- VIT +7
 INSERT INTO `item_mods` VALUES (28671,13,7);      -- MND +7
 INSERT INTO `item_mods` VALUES (28671,161,-4);    -- Physical damage taken -4%
 INSERT INTO `item_mods` VALUES (13431,384,2000);  -- Haste +20%
-INSERT INTO `item_mods` VALUES (13431,430,5);     -- Quad attack 5%
+INSERT INTO `item_mods` VALUES (13431,430,10);     -- Quad attack 5%
+INSERT INTO `item_mods` VALUES (13431,27,30);     -- Enmity 30
+INSERT INTO `item_mods` VALUES (13431,170,10);     -- Fast cast +10%
 INSERT INTO `item_mods` VALUES (13433,346,7);     -- Avatar perpetuation cost -7
 INSERT INTO `item_mods` VALUES (13433,369,2);     -- Refresh
 INSERT INTO `item_mods` VALUES (13424,430,5);     -- Quadruple Attack +5%
 INSERT INTO `item_mods` VALUES (13424,384,2000);     -- Haste +20%
 INSERT INTO `item_mods` VALUES (13424,303,2);     -- Treasure Hunter +2
-INSERT INTO `item_mods` VALUES (13421,27,-10);     -- Enmity -10
+INSERT INTO `item_mods` VALUES (13421,27,-30);     -- Enmity -10
 INSERT INTO `item_mods` VALUES (13421,374,10);     -- Cure +10%
 INSERT INTO `item_mods` VALUES (13421,170,10);     -- Fast cast +10%
 INSERT INTO `item_mods` VALUES (13421,384,2000);  -- Haste +20%
 INSERT INTO `item_mods` VALUES (13422,384,2000);  -- Haste +20%
 INSERT INTO `item_mods` VALUES (13422,28,10);     -- Magic attack bonus +10
 INSERT INTO `item_mods` VALUES (13422,30,10);     -- Magic attack ACC +10
-INSERT INTO `item_mods` VALUES (13422,27,-10);     -- Enmity -10
-INSERT INTO `item_mods` VALUES (13426,27,-10);     -- Enmity -10
+INSERT INTO `item_mods` VALUES (13422,27,-30);     -- Enmity -10
+INSERT INTO `item_mods` VALUES (13426,27,-30);     -- Enmity -10
 INSERT INTO `item_mods` VALUES (13426,384,2000);  -- Haste +20%
 INSERT INTO `item_mods` VALUES (13426,288,5);     -- Double Attack+5
 INSERT INTO `item_mods` VALUES (13426,306,5);     -- Zanshin+5
@@ -49462,7 +49464,7 @@ INSERT INTO `item_mods` VALUES (13419,23,10);     -- ATT +10
 INSERT INTO `item_mods` VALUES (13419,25,10);     -- ACC +10
 INSERT INTO `item_mods` VALUES (13425,384,2000);  -- Haste +20% 
 INSERT INTO `item_mods` VALUES (13425,430,5);     -- Quad attack 5%
-INSERT INTO `item_mods` VALUES (13425,27,10);     -- Enmity +10
+INSERT INTO `item_mods` VALUES (13425,27,30);     -- Enmity +10
 INSERT INTO `item_mods` VALUES (28625,161,-10);    -- Physical damage taken -10%
 INSERT INTO `item_mods` VALUES (28625,163,-10);   -- Magic damage taken -10%
 INSERT INTO `item_mods` VALUES (13425,369,2);     -- Refresh

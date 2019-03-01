@@ -42,7 +42,7 @@ end
 function onUseAbility(player,target,ability)
     -- Only remove TP if the player doesn't have Trance.
     if not player:hasStatusEffect(dsp.effect.TRANCE) then
-        player:delTP(650)
+        player:delTP(350)
     end
 
     --Grabbing variables.
@@ -53,8 +53,11 @@ function onUseAbility(player,target,ability)
 
     --Performing mj check.
     if mjob == dsp.job.DNC then
-        cure = (vit+chr)+450
+        cure = (vit+chr)*1.0+300
+    else
+        cure = (vit+chr)*0.500+300
     end
+
 
     -- apply waltz modifiers
     cure = math.floor(cure * (1.0 + (player:getMod(dsp.mod.WALTZ_POTENTCY)/100)))

@@ -11,11 +11,11 @@ function onMagicCastingCheck(caster, target, spell)
 end
 
 function onSpellCast(caster, target, spell)
-    local duration = calculateDuration(1800, spell:getSkillType(), spell:getSpellGroup(), caster, target, false)
+    local duration = calculateDuration(3600, spell:getSkillType(), spell:getSpellGroup(), caster, target, false)
     duration = calculateDurationForLvl(duration, 75, target:getMainLvl())
 
     local meritBonus = caster:getMerit(dsp.merit.PROTECTRA_V)
-    local power = 175 + meritBonus
+    local power = 300 + meritBonus
     if (meritBonus > 0) then -- certain mobs can cast this spell, so don't apply the -5 for having 0 merits.
         power = power + meritBonus - 5
     end

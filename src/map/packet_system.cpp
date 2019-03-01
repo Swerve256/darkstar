@@ -5445,7 +5445,7 @@ void SmallPacket0x100(map_session_data_t* session, CCharEntity* PChar, CBasicPac
             JOBTYPE prevsjob = PChar->GetSJob();
             PChar->resetPetZoningInfo();
 
-            PChar->SetSJob(sjob);
+			PChar->SetSJob(sjob);
             PChar->SetSLevel(PChar->jobs.job[PChar->GetSJob()]);
 
             charutils::CheckEquipLogic(PChar, SCRIPT_CHANGESJOB, prevsjob);
@@ -5482,11 +5482,7 @@ void SmallPacket0x100(map_session_data_t* session, CCharEntity* PChar, CBasicPac
         });
 
 
-        PChar->UpdateHealth();
 
-        PChar->health.hp = PChar->GetMaxHP();
-        PChar->health.mp = PChar->GetMaxMP();
-        PChar->updatemask |= UPDATE_HP;
 
         charutils::SaveCharStats(PChar);
 

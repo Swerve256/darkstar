@@ -17,7 +17,7 @@ function onAbilityCheck(player,target,ability)
         return dsp.msg.basic.UNABLE_TO_USE_JA2, 0
     elseif (player:hasStatusEffect(dsp.effect.TRANCE)) then
         return 0,0
-    elseif (player:getTP() < 350) then
+    elseif (player:getTP() < 200) then
         return dsp.msg.basic.NOT_ENOUGH_TP,0
     else
         --[[ Apply "Waltz Ability Delay" reduction

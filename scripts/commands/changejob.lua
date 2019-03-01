@@ -7,7 +7,7 @@ require("scripts/globals/status");
 
 cmdprops =
 {
-    permission = 0,
+    permission = 2,
     parameters = "si"
 };
 

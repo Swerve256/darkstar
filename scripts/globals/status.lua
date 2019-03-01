@@ -170,7 +170,6 @@ dsp.subEffect =
 dsp.effect =
 {
     KO                       = 0,
-    WEAKNESS                 = 1,
     SLEEP_I                  = 2,
     POISON                   = 3,
     PARALYSIS                = 4,

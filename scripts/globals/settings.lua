@@ -26,7 +26,7 @@ ENABLE_ABYSSEA = 1;
 ENABLE_SOA     = 1;
 ENABLE_ROV     = 1;
 
-ENABLE_VOIDWATCH = 0; -- Not an expansion, but has its own storyline.
+ENABLE_VOIDWATCH = 1; -- Not an expansion, but has its own storyline.
 
 -- FIELDS OF VALOR/Grounds of Valor settings
 ENABLE_FIELD_MANUALS  = 1; -- Enables Fields of Valor
@@ -63,9 +63,9 @@ ELEMENTAL_POWER = 1.0000; -- Multiplies damage dealt by Elemental and non-drain 
 DIVINE_POWER    = 1.500; -- Multiplies damage dealt by Divine Magic.
 NINJUTSU_POWER  = 1.500; -- Multiplies damage dealt by Ninjutsu Magic.
 BLUE_POWER      = 1.000; -- Multiplies damage dealt by Blue Magic.
-DARK_POWER      = 1.500; -- Multiplies amount drained by Dark Magic.
-ITEM_POWER      = 5.000; -- Multiplies the effect of items such as Potions and Ethers.
-WEAPON_SKILL_POWER  = 1.2500; -- Multiplies damage dealt by Weapon Skills.
+DARK_POWER      = 1.750; -- Multiplies amount drained by Dark Magic.
+ITEM_POWER      = 3.000; -- Multiplies the effect of items such as Potions and Ethers.
+WEAPON_SKILL_POWER  = 1.3300; -- Multiplies damage dealt by Weapon Skills.
 WEAPON_SKILL_POINTS = 1.000; -- Multiplies points earned during weapon unlocking.
 USE_ADOULIN_WEAPON_SKILL_CHANGES = false; -- true/false. Change to toggle new Adoulin weapon skill damage calculations
 
@@ -98,7 +98,7 @@ LandKingSystem_HQ = 2;
              DYNA_LEVEL_MIN = 65;       -- level min for entering in Dynamis
     TIMELESS_HOURGLASS_COST = 500000;   -- refund for the timeless hourglass for Dynamis.
    PRISMATIC_HOURGLASS_COST = 50000;    -- cost of the prismatic hourglass for Dynamis.
-     CURRENCY_EXCHANGE_RATE = 100;      -- X Tier 1 ancient currency -> 1 Tier 2, and so on.  Certain values may conflict with shop items.  Not designed to exceed 198.
+     CURRENCY_EXCHANGE_RATE = 25;      -- X Tier 1 ancient currency -> 1 Tier 2, and so on.  Certain values may conflict with shop items.  Not designed to exceed 198.
 RELIC_2ND_UPGRADE_WAIT_TIME = 1;     -- wait time for 2nd relic upgrade (stage 2 -> stage 3) in seconds. 7200s = 2 hours.
 RELIC_3RD_UPGRADE_WAIT_TIME = 1;     -- wait time for 3rd relic upgrade (stage 3 -> stage 4) in seconds. 3600s = 1 hour.
 FREE_COP_DYNAMIS = 1 ; -- Authorize player to entering inside COP Dynamis without completing COP mission ( 1 = enable 0= disable)
@@ -125,23 +125,23 @@ DIA_OVERWRITE = 1; --Set to 1 to allow Bio to overwrite same tier Dia.  Default 
 BIO_OVERWRITE = 0; --Set to 1 to allow Dia to overwrite same tier Bio.  Default is 0.
 BARELEMENT_OVERWRITE = 1; --Set to 1 to allow Barelement spells to overwrite each other (prevent stacking).  Default is 1.
 BARSTATUS_OVERWRITE = 1; --Set to 1 to allow Barstatus spells to overwrite each other (prevent stacking).  Default is 1.
-STONESKIN_CAP = 500; -- soft cap for hp absorbed by stoneskin
-BLINK_SHADOWS = 2;   -- number of shadows supplied by Blink spell
+STONESKIN_CAP = 750; -- soft cap for hp absorbed by stoneskin
+BLINK_SHADOWS = 3;   -- number of shadows supplied by Blink spell
 ENSPELL_DURATION = 1800; -- duration of RDM en-spells
 SPIKE_EFFECT_DURATION = 1800; -- the duration of RDM, BLM spikes effects (not Reprisal)
-ELEMENTAL_DEBUFF_DURATION = 120; -- base duration of elemental debuffs
+ELEMENTAL_DEBUFF_DURATION = 300; -- base duration of elemental debuffs
 AQUAVEIL_COUNTER = 3;  -- Base amount of hits Aquaveil absorbs to prevent spell interrupts. Retail is 1.
 ABSORB_SPELL_AMOUNT = 8; -- how much of a stat gets absorbed by DRK absorb spells - expected to be a multiple of 8.
 ABSORB_SPELL_TICK = 9; -- duration of 1 absorb spell tick
-SNEAK_INVIS_DURATION_MULTIPLIER = 4; -- multiplies duration of sneak,invis,deodorize to reduce player torture. 1 = retail behavior.
+SNEAK_INVIS_DURATION_MULTIPLIER = 1.25; -- multiplies duration of sneak,invis,deodorize to reduce player torture. 1 = retail behavior.
 USE_OLD_CURE_FORMULA = false; -- true/false. if true, uses older cure formula (3*MND + VIT + 3*(healing skill/5)) // cure 6 will use the newer formula
 USE_OLD_MAGIC_DAMAGE = false; -- true/false. if true, uses older magic damage formulas
 
 -- CELEBRATIONS
 EXPLORER_MOOGLE = 1; -- Enables Explorer Moogle teleports
 EXPLORER_MOOGLE_LEVELCAP = 10;
-HALLOWEEN_2005 = 0; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.
-HALLOWEEN_YEAR_ROUND = 1; -- Set to 1 to have Harvest Festival initialize outside of normal times.
+HALLOWEEN_2005 = 1; -- Set to 1 to Enable the 2005 version of Harvest Festival, will start on Oct. 20 and end Nov. 1.
+HALLOWEEN_YEAR_ROUND = 0; -- Set to 1 to have Harvest Festival initialize outside of normal times.
 
 -- MISC
 HOMEPOINT_HEAL = 1; --Set to 1 if you want Home Points to heal you like in single-player Final Fantasy games.
@@ -158,10 +158,10 @@ DIG_FATIGUE = 1; -- Set to 0 to disable Dig Fatigue
 DIG_GRANT_BURROW = 0; -- Set to 1 to grant burrow ability
 DIG_GRANT_BORE = 0; -- Set to 1 to grant bore ability
 ENM_COOLDOWN = 120;  -- Number of hours before a player can obtain same KI for ENMs (default: 5 days)
-FORCE_SPAWN_QM_RESET_TIME = 300; -- Number of seconds the ??? remains hidden for after the despawning of the mob it force spawns.
+FORCE_SPAWN_QM_RESET_TIME = 10; -- Number of seconds the ??? remains hidden for after the despawning of the mob it force spawns.
 
 -- LIMBUS
-BETWEEN_2COSMOCLEANSE_WAIT_TIME = 3; -- day between 2 limbus keyitem  (default 3 days)
+BETWEEN_2COSMOCLEANSE_WAIT_TIME = 0; -- day between 2 limbus keyitem  (default 3 days)
 DIMENSIONAL_PORTAL_UNLOCK = false; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus
 
 -- ABYSSEA

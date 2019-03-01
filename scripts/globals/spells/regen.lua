@@ -12,11 +12,11 @@ function onMagicCastingCheck(caster, target, spell)
 end
 
 function onSpellCast(caster, target, spell)
-    local hp = math.ceil(5 * (1 + 0.01 * caster:getMod(dsp.mod.REGEN_MULTIPLIER))) -- spell base times gear multipliers
+    local hp = math.ceil(10 * (1 + 0.01 * caster:getMod(dsp.mod.REGEN_MULTIPLIER))) -- spell base times gear multipliers
     hp = hp + caster:getMerit(dsp.merit.REGEN_EFFECT) -- bonus hp from merits
     hp = hp + caster:getMod(dsp.mod.LIGHT_ARTS_REGEN) -- bonus hp from light arts
 
-    local duration = calculateDuration(75 + caster:getMod(dsp.mod.REGEN_DURATION), spell:getSkillType(), spell:getSpellGroup(), caster, target)
+    local duration = calculateDuration(600 + caster:getMod(dsp.mod.REGEN_DURATION), spell:getSkillType(), spell:getSpellGroup(), caster, target)
     duration = calculateDurationForLvl(duration, 21, target:getMainLvl())
 
     if target:addStatusEffect(dsp.effect.REGEN, hp, 0, duration) then

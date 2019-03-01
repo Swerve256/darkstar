@@ -13,13 +13,13 @@ end
 function onSpellCast(caster, target, spell)
     local enhskill = caster:getSkillLevel(dsp.skill.ENHANCING_MAGIC)
     local final = 0
-    local duration = calculateDuration(180, spell:getSkillType(), spell:getSpellGroup(), caster, target)
+    local duration = calculateDuration(600, spell:getSkillType(), spell:getSpellGroup(), caster, target)
     duration = calculateDurationForLvl(duration, 33, target:getMainLvl())
 
-    if enhskill <= 300 then
+    if enhskill <= 100 then
         final = math.max(enhskill / 10 - 2, 0)
-    elseif enhskill > 300 then
-        final = (enhskill - 300) / 29 + 28
+    elseif enhskill > 150 then
+        final = (enhskill - 150) / 29 + 28
     else
         print("Warning: Unknown enhancing magic skill for phalanx.")
     end

@@ -13,10 +13,10 @@ function onMagicCastingCheck(caster, target, spell)
 end
 
 function onSpellCast(caster, target, spell)
-    local duration = calculateDuration(150, spell:getSkillType(), spell:getSpellGroup(), caster, target)
+    local duration = calculateDuration(600, spell:getSkillType(), spell:getSpellGroup(), caster, target)
     duration = calculateDurationForLvl(duration, 41, target:getMainLvl())
 
-    local mp = 3 + caster:getMod(dsp.mod.ENHANCES_REFRESH)
+    local mp = 6 + caster:getMod(dsp.mod.ENHANCES_REFRESH)
 
     if target:hasStatusEffect(dsp.effect.SUBLIMATION_ACTIVATED) or target:hasStatusEffect(dsp.effect.SUBLIMATION_COMPLETE) then
         spell:setMsg(dsp.msg.basic.MAGIC_NO_EFFECT)

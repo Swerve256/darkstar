@@ -294,7 +294,7 @@ inline int32 CLuaBaseEntity::PrintToServer(lua_State* L)
 	message::send(MSG_CHAT_SERVMES, 0, 0, new CChatMessagePacket((CCharEntity*)m_PBaseEntity, messageType, (char*)lua_tostring(L, 1)));
 	return 0;
 }
-}
+
 
 /************************************************************************
 *  Function: PrintToArea()
@@ -11053,10 +11053,10 @@ inline int32 CLuaBaseEntity::addCorsairRoll(lua_State *L)
         (n >= 7 ? (uint32)lua_tointeger(L, 7) : 0),  // SubID or 0
         (n >= 8 ? (uint16)lua_tointeger(L, 8) : 0),  // SubPower or 0
         (n >= 9 ? (uint16)lua_tointeger(L, 9) : 0)); // Tier or 0
-    uint8 maxRolls = 2;
+    uint8 maxRolls = 4;
     if (casterJob != JOB_COR)
     {
-        maxRolls = 1;
+        maxRolls = 4;
     }
     lua_pushboolean(L, ((CBattleEntity*)m_PBaseEntity)->StatusEffectContainer->ApplyCorsairEffect(PEffect, maxRolls, bustDuration));
     return 1;
@@ -11169,7 +11169,7 @@ inline int32 CLuaBaseEntity::addBardSong(lua_State *L)
         (uint16)lua_tointeger(L, 7),  // SubPower
         (uint16)lua_tointeger(L, 8)); // Tier
 
-    uint8 maxSongs = 2;
+    uint8 maxSongs = 4;
 
     if (PEntity && PEntity->m_PBaseEntity && PEntity->m_PBaseEntity->objtype == TYPE_PC)
     {
@@ -11177,7 +11177,7 @@ inline int32 CLuaBaseEntity::addBardSong(lua_State *L)
         CItemWeapon* PItem = (CItemWeapon*)PCaster->getEquip(SLOT_RANGED);
         if (PItem == nullptr || PItem->getID() == 65535 || !(PItem->getSkillType() == SKILL_STRING_INSTRUMENT || PItem->getSkillType() == SKILL_WIND_INSTRUMENT))
         {
-            maxSongs = 1;
+            maxSongs = 4;
         }
         maxSongs += PCaster->getMod(Mod::MAXIMUM_SONGS_BONUS);
     }

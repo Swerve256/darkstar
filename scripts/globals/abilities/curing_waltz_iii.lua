@@ -42,7 +42,7 @@ end
 function onUseAbility(player,target,ability)
     -- Only remove TP if the player doesn't have Trance.
     if not player:hasStatusEffect(dsp.effect.TRANCE) then
-        player:delTP(500)
+        player:delTP(300)
     end
 
     --Grabbing variables.

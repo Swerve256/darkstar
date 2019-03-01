@@ -12,10 +12,10 @@ function onMagicCastingCheck(caster, target, spell)
 end
 
 function onSpellCast(caster, target, spell)
-    local duration = calculateDuration(180, spell:getSkillType(), spell:getSpellGroup(), caster, target)
+    local duration = calculateDuration(600, spell:getSkillType(), spell:getSpellGroup(), caster, target)
     duration = calculateDurationForLvl(duration, 48, target:getMainLvl())
 
-    local power = 1465 -- 150/1024 ~14.65%
+    local power = 2500 -- 150/1024 ~25.00%
 
     if not target:addStatusEffect(dsp.effect.HASTE, power, 0, duration) then
         spell:setMsg(dsp.msg.basic.MAGIC_NO_EFFECT)
