@@ -209,8 +209,23 @@ void CZoneEntities::TransportDepart(uint16 boundary, uint16 zone)
 
         if (PCurrentChar->loc.boundary == boundary)
         {
+            if (PCurrentChar->m_event.Target != nullptr)
+            {
+                //The player talked to one of the guys on the boat, and the event target is wrong.
+                //This leads to the wrong script being loaded and you get stuck on a black screen
+                //instead of loading into the port.
+                
+                //Attempt to load the proper script
+                PCurrentChar->m_event.Target = nullptr;
+                size_t deleteStart = PCurrentChar->m_event.Script.find("npcs/");
+                size_t deleteEnd = PCurrentChar->m_event.Script.find(".lua");
+
+                if (deleteStart != std::string::npos && deleteEnd != std::string::npos)
+                    PCurrentChar->m_event.Script.replace(deleteStart, deleteEnd - deleteStart, "Zone");
+            }
             luautils::OnTransportEvent(PCurrentChar, zone);
         }
+            
     }
 }
 
@@ -645,7 +660,7 @@ CBaseEntity* CZoneEntities::GetEntity(uint16 targid, uint8 filter)
     }
     else if (targid < 0x800)
     {
-        if (filter & TYPE_PET)
+        if (filter & TYPE_PET || filter & TYPE_TRUST)
         {
             EntityList_t::const_iterator it = m_petList.find(targid);
             if (it != m_petList.end())

@@ -1,8 +1,8 @@
 -----------------------------------
--- Area: Arrapago Reef
---  Mob: Lamie Nercromancer
+-- Area: La Vaule (S)
+--   NM: Shatterskull Mippdapp
 -----------------------------------
-mixins = {require("scripts/mixins/weapon_break")}
+mixins = {require("scripts/mixins/families/gnole")}
 -----------------------------------
 
 function onMobDeath(mob, player, isKiller)
