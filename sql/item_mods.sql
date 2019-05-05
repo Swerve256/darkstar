@@ -17569,10 +17569,10 @@ INSERT INTO `item_mods` VALUES (15540,1,2);
 INSERT INTO `item_mods` VALUES (15540,23,7);
 INSERT INTO `item_mods` VALUES (15540,241,2);
 INSERT INTO `item_mods` VALUES (15540,370,1);
-INSERT INTO `item_mods` VALUES (15543,8,2);
-INSERT INTO `item_mods` VALUES (15543,9,2);
-INSERT INTO `item_mods` VALUES (15543,73,5);
-INSERT INTO `item_mods` VALUES (15543,289,5);
+INSERT INTO `item_mods` VALUES (15543,8,15);
+INSERT INTO `item_mods` VALUES (15543,9,15);
+INSERT INTO `item_mods` VALUES (15543,73,15);
+INSERT INTO `item_mods` VALUES (15543,289,15);
 INSERT INTO `item_mods` VALUES (15544,2,15);
 INSERT INTO `item_mods` VALUES (15544,10,2);
 INSERT INTO `item_mods` VALUES (15544,11,2);
@@ -49468,6 +49468,11 @@ INSERT INTO `item_mods` VALUES (13425,27,30);     -- Enmity +10
 INSERT INTO `item_mods` VALUES (28625,161,-10);    -- Physical damage taken -10%
 INSERT INTO `item_mods` VALUES (28625,163,-10);   -- Magic damage taken -10%
 INSERT INTO `item_mods` VALUES (13425,369,2);     -- Refresh
+INSERT INTO `item_mods` VALUES (11479,368,50);     -- Regain
+INSERT INTO `item_mods` VALUES (11479,384,2000);     -- Haste
+INSERT INTO `item_mods` VALUES (11479,430,5);     -- Quad attack 5%
+INSERT INTO `item_mods` VALUES (11479,259,5);  -- EN DUAL WIELD
+INSERT INTO `item_mods` VALUES (11479,73,5); -- STORETP
 
 /*!40000 ALTER TABLE `item_mods` ENABLE KEYS */;
 UNLOCK TABLES;
