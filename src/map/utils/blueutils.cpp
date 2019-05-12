@@ -136,8 +136,13 @@ void TryLearningSpells(CCharEntity* PChar, CMobEntity* PMob) {
             // make sure the difference between spell skill and player is at most 31 points
             if (playerSkillLvl >= skillLvlForSpell - 31)
             {
+<<<<<<< HEAD
                 // TODO: check for blue learning bonus and adjust base percent
                 if (dsprand::GetRandomNumber(100) < 50) {
+=======
+                auto chanceToLearn = 33 + PBlueMage->getMod(Mod::BLUE_LEARN_CHANCE);
+                if (dsprand::GetRandomNumber(100) < chanceToLearn) {
+>>>>>>> upstream/master
 					if (charutils::addSpell(PBlueMage, static_cast<uint16>(PSpell->getID()))) {
 						PBlueMage->pushPacket(new CMessageBasicPacket(PBlueMage, PBlueMage, static_cast<uint16>(PSpell->getID()), 0, MSGBASIC_LEARNS_SPELL));
 						charutils::SaveSpell(PBlueMage, static_cast<uint16>(PSpell->getID()));
